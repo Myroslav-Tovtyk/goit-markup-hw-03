@@ -7,7 +7,8 @@
 }
 
 ul {
-  list-style: none;
+  list-style: none;    
+}
 }
 /* Колір основного тексту
 color: #212121  - main
@@ -34,14 +35,34 @@ body {
 .container-nav{
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  width: 1170px;
+  /* justify-content: flex-start; */
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 32px;
   margin-top: 32px;
+  margin-bottom: 32px;
+  padding-left: 15px;
+  padding-right: 15px;
   border: #000000 solid 2px;
 }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  align-items: center;
+  /* justify-content:center; */
+  
+  margin-left: auto;
+  margin-right: auto;
+  background-color: teal;
+  
+  /* padding-left: 15px;
+  padding-right: 15px; */
+  /* margin-bottom: 32px;
+  margin-top: 32px; */
+  /* border: #000000 solid 2px; */  
+}
+
 
 /* logo */
 .logo-blue {
@@ -67,9 +88,13 @@ body {
 
 /* site-nav */
 
-.site-nav, .contact-nav, .hero-title, .feachers-title, .logic-title, .list {
+.site-nav, .contact-nav, .hero-title, .feachers-title, .feachure-list,
+.feachers-title, .list, .section, .section-title, .footer, .adress,
+.adress-mail, .adress-phone, .adress-street, .logo, .logo-blue,
+.buttons, .section-name, .section-post {
   padding: 0;
   margin: 0;
+  /* list-style: none; */
 }
 
 .link:hover,
@@ -122,17 +147,24 @@ color: var(--title-text-color);
 }
 
 /* hero */
+.hero {
+  background-color: #2F303A;
+  
+  width: 1400px;
+  height: 600px;
+  margin-bottom: 94px
+}
 
-.hero .hero-title {
+.hero .hero-title{
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
+  
   color: #FFFFFF;
-  background-color: #2F303A;
+  
 }
 
 .button {
@@ -156,19 +188,52 @@ color: var(--title-text-color);
 .button:hover {
   color: var(--button-color);
   background-color: var(--accent-color);
-}
- 
+} 
 
 /* Section */
 
-.logic-title {
-opacity: 0;
+/* feachure-list */
+ .list{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.list .feachure-list{  
+  /* width: 270px; */
+  width: calc((100% - 90px) / 4);
+  background-color: tomato;  
+  margin-bottom: 94px;
+} 
+.list .feachure-list + .feachure-list{
+  margin-left: 30px;
 }
 
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
+
+/* Чем занимаемся */
 .section .section-title {
   color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+
+.list .list-img + .list-img{
+  margin-left: 30px;
+  margin-bottom: 94px;
+
 }
 
 .section-title {
@@ -176,6 +241,8 @@ opacity: 0;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+
+  margin-bottom: 50px;
 }
 
 .feachers-title {
@@ -192,11 +259,16 @@ opacity: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  margin-left: 80px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .team-position {
   font-size: 16px;
   line-height: 1.18;
+  margin-left: 80px;
+  margin-bottom: 124px;
 }
 
 .section-name {
@@ -211,10 +283,11 @@ opacity: 0;
   font-size: 16px;
   line-height: 1.87;
 }
+.section-bgd{
+  background-color: #F5F4FA;
+}
 
 /* button */
-
-
 
 .buttons {
   color: var(--title-text-color);
@@ -227,6 +300,13 @@ opacity: 0;
   line-height: 1.6;
   text-align: center;
 }
+  .list .but + .but{
+  margin-left: 8px;  
+  
+}
+.list{
+  margin-bottom: 50px;
+}
 .buttons:hover {
   color: var(--button-color);
   background-color: var(--accent-color);
@@ -235,21 +315,34 @@ opacity: 0;
 
  .footer {
   background-color: #2F303A;
+  width: 1200px;
   }
 .footer .logo {
   color: #FFFFFF;
+  padding-left: 15px;  
+}
+/* .logo{
+  padding-top: 60px; */
 }
 .logo-foot:hover {
   color: var(--accent-color);
 }
+.adress{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
 .adress .adress-street  {
 color: #FFFFFF;
 font-style: normal;
+padding-left: 15px;
 }
 .adress .adress-mail {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
+  padding-left: 15px;
 }
 .adress .adress-phone {
   color: rgba(255, 255, 255, 0.6);
