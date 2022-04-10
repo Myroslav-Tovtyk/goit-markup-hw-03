@@ -120,19 +120,25 @@ text-decoration: none;
 
   .arrow{
   margin-top: 32px;
-  margin-bottom: 32px;
+  border-bottom: 1px solid #ECECEC ;
 }
-}
+
 /* hero */
 
 .hero{
   background-color: #2F303A;
-  text-align: center;
   margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 280px;
 }
 
 .hero .hero-title {
   color: #FFFFFF;    
+
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
@@ -189,8 +195,8 @@ align-items: center;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-    margin-bottom: 50px;
 
+  margin-bottom: 50px;
 }
 
 .feachers-title {
@@ -201,12 +207,23 @@ align-items: center;
   line-height: 1.14;
   text-transform: uppercase;
 }
+/* Наша команда */
+.team-img{
+margin-bottom: 30px;
+}
 
+.team{
+  text-align: center;
+  background-color: #F5F4FA;
+
+}
 .team-title {
   color:var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+
+  margin-bottom: 10px;
 }
 
 .team-position {
@@ -216,6 +233,8 @@ align-items: center;
 
 .section-name {
   color: var(--title-text-color);
+  margin-top: 21px;
+  margin-bottom: 4px;
 
   font-weight: 700;
   font-size: 18px;
@@ -261,6 +280,8 @@ align-items: center;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
+  margin-top: 94px;
+  margin-bottom: 34px;
 }
 .buttons:hover {
   color: var(--button-color);
@@ -277,30 +298,47 @@ align-items: center;
   margin-left: 8px;
 }
 .section.but{
-  margin-bottom: 50px;
+  margin-bottom: 50px;  
+}
+
+.name{
+  width: 322px;
+  margin-left: 24px;
 }
   /* footer */
 
  .footer {
+  width: 1200px;
   background-color: #2F303A;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 215px;
   }
 .footer .logo {
-  color: #FFFFFF;
+  color: #FFFFFF;  
 }
+
 .logo-foot:hover {
   color: var(--accent-color);
+}
+.adress{
+  margin-top: 20px;
 }
 .adress .adress-street  {
 color: #FFFFFF;
 font-style: normal;
+margin-bottom: 9px;
 }
 .adress .adress-mail {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
+  
 }
 .adress .adress-phone {
+  display: block;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
+  margin-top: 9px;
 }
