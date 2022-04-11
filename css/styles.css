@@ -117,11 +117,14 @@ text-decoration: none;
 .site-contact .nav-cont + .nav-cont{
   margin-left: 50px;
 }
-
-  .arrow{
+.header{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+  /* .arrow{
   margin-top: 32px;
   border-bottom: 1px solid #ECECEC ;
-}
+} */
 
 /* hero */
 
@@ -129,7 +132,7 @@ text-decoration: none;
   background-color: #2F303A;
   margin-bottom: 94px;
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 
 .hero .hero-title {
@@ -174,13 +177,14 @@ align-items: center;
   margin-left: 30px;
 }
 .section{
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /* Чем ми занимаемся */
 .list .feachures-img{
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .feachures-img:nth-child(3n){
@@ -201,6 +205,7 @@ align-items: center;
 
 .feachers-title {
   color: var(--title-text-color);
+  margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
@@ -233,12 +238,12 @@ margin-bottom: 30px;
 
 .section-name {
   color: var(--title-text-color);
-  margin-top: 21px;
+  margin-top: 20px;
   margin-bottom: 4px;
 
   font-weight: 700;
   font-size: 18px;
-  line-height: 0.2;
+  line-height: 2;
   letter-spacing: 0.06em;  
 }
 .section-post {
@@ -249,11 +254,16 @@ margin-bottom: 30px;
 /* button */
 
 .button {
-  color: var(--title-text-color);
-  background-color: var(--btn-bgd-color);
+  color: var(--button-color);
+  background-color:var(--accent-color);
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
 
   font-family: 'Roboto';
   font-weight: 700;
@@ -266,8 +276,8 @@ margin-bottom: 30px;
 }
 
 .button:hover {
-  color: var(--button-color);
-  background-color: var(--accent-color);
+  color: var(--title-text-color);
+  background-color: var(--btn-bgd-color);
 }
 
 .buttons {
@@ -302,13 +312,16 @@ margin-bottom: 30px;
 }
 
 .name{
-  width: 322px;
-  margin-left: 24px;
+  width: 370px;  
+  padding-left: 24px;
+  padding-right:24px;
+    border: #EEEEEE solid 1px;
+
+
 }
   /* footer */
 
  .footer {
-  width: 1200px;
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
