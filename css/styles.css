@@ -55,8 +55,9 @@ body {
 }
 /* logo */
 .header{
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: #ECECEC solid 1px;
 }
 .logo-blue {
   color: var(--accent-color);
@@ -194,6 +195,10 @@ color: var(--accent-color);
 
 /* Секция чем ми занимаемся */
 
+.section-doing{
+  padding-bottom: 94px;
+}
+
 .list .feachers-list + .feachers-list{
   margin-left: 30px;
 }
@@ -228,14 +233,15 @@ color: var(--accent-color);
 }
 .team{
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-title {
   color:var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
-  margin-top: 30px;
+  line-height: 1.18;  
   margin-bottom: 10px;
 }
 
@@ -244,8 +250,6 @@ color: var(--accent-color);
   line-height: 1.18;
 }
 
-
-
   /* footer */
 
  .footer {
@@ -253,9 +257,7 @@ color: var(--accent-color);
   padding-top: 60px;
   padding-bottom: 60px;
   }
-  .foot{
-margin-left: 215px;
-  }
+ 
   .adress-street{
     margin-top: 20px;
     margin-bottom: 9px;
@@ -273,8 +275,7 @@ font-style: normal;
 .adress .adress-mail {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  font-style: normal;
-  /* margin-bottom: 9px; */
+  font-style: normal; 
 }
 .adress .adress-phone {
   display: block;
@@ -295,7 +296,7 @@ font-style: normal;
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 
   font-family: 'Roboto';
   font-weight: 500;
@@ -310,7 +311,7 @@ font-style: normal;
 .but-list{
   display: flex;
   justify-content: center;
-  
+  padding-bottom: 50px;
 }
 .but-list .but +.but{
  margin-left: 8px;
@@ -323,16 +324,17 @@ font-style: normal;
 .feachers-img:nth-child(3n){
   margin-right: 0;
 }
+.feachers-img:nth-child(n+7){
+  margin-bottom: 0;
+}
 .name{
   width: 370px;  
-  padding-left: 24px;
-  padding-right:24px;
+  padding: 20px 24px;
   border: var(--border-color) solid 1px;
 }
 
   .section-name {
-  color: var(--title-text-color);
-  margin-top: 20px;
+  color: var(--title-text-color);  
   margin-bottom: 4px;
 
   font-weight: 700;
