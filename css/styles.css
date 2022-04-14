@@ -311,7 +311,7 @@ font-style: normal;
 .but-list{
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .but-list .but +.but{
  margin-left: 8px;
